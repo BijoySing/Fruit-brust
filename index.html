@@ -17,9 +17,9 @@
     <nav class="max-w-screen-xl m-auto">
         <div class="navbar bg-red-500 lg:flex px-8 py-4 rounded-full my-3 font-semibold">
             <div class="navbar-start">
-                <div class="menu-sm-dropdown flex">
-                    <ul class="flex gap-5">
-                        <li><a>Homep</a></li>
+                <div class="menu-sm-dropdown flex cursor-pointer">
+                    <ul class="flex gap-5 cursor-pointer">
+                        <li class="cursor-pointer"><a href="index.html">Home</a></li>
                         <li><a>shop</a></li>
                         <li><a>About</a></li>
                         <li><a>All fruits</a></li>
@@ -38,7 +38,7 @@
                     <input type="text" placeholder="Search"
                         class="input input-bordered w-24 md:w-auto pr-10 rounded-3xl" />
                     <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
-                        <button class="btn btn-ghost btn-circle">
+                        <button class="btn btn-ghost btn-circle cursor-pointer">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -57,34 +57,59 @@
 
         <div class="carousel w-full my-5">
             <div id="slide1" class="carousel-item relative w-full">
-              <img class="bg-black" src="/images/banner1.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide2" class="carousel-item relative w-full">
-                <img src="/images/banner2.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle">❮</a> 
-                <a href="#slide3" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide3" class="carousel-item relative w-full">
-                <img src="/images/banner3.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" class="btn btn-circle">❮</a> 
-                <a href="#slide4" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide4" class="carousel-item relative w-full">
-                <img src="/images/banner4.png" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide3" class="btn btn-circle">❮</a> 
-                <a href="#slide1" class="btn btn-circle">❯</a>
-              </div>
+                <div class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center w-full"
+                    style="background-image: url('images/banner3.png')">
+                    <div
+                    class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+                    style="background-color: rgba(0, 0, 0, 0.6)">
+                    <div class="flex h-full items-center justify-center">
+                      <div class="text-white">
+                        <h2 class="mb-4 text-4xl font-semibold">Heading</h2>
+                        <h4 class="mb-6 text-xl font-semibold">Subheading</h4>
+                        <button
+                          type="button"
+                          class="rounded border-2 border-neutral-50 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+                          data-te-ripple-init
+                          data-te-ripple-color="light">
+                          Call to action
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+
+
+
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="/images/banner2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="/images/banner1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="/images/banner4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
             </div>
-          </div>
     </section>
 
 
