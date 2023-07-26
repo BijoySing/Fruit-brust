@@ -15,62 +15,68 @@
 
 <body class="max-w-screen-xl m-auto">
     <!-- Navbar -->
-    <header class="container mx-auto px-4 lg:px-0">
-        <div
-            class=" bg-white  p-5 lg:bg-red-500 flex justify-between items-center   lg:py-4 px-0 lg:px-12 my-0 lg:my-12 rounded-2xl lg:rounded-full">
-            <div class="hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <ul class="flex gap-4">
-                        <li><a class="font-normal text-lg text-white capitalize hover:text-colorPrimary hover:bg-white"
+    <section class="Navbar">
+        <header class="container mx-auto px-4 lg:px-0">
+            <div
+                class=" bg-white  p-5 lg:bg-red-500 flex justify-between items-center   lg:py-4 px-0 lg:px-12 my-0 lg:my-12 rounded-2xl lg:rounded-full">
+                <div class="hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <ul class="flex gap-4">
+                            <li><a class="font-normal text-lg text-white capitalize hover:text-colorPrimary hover:bg-white"
+                                    href="#">home</a>
+                            </li>
+                            <li><a class="font-normal text-lg text-white capitalize hover:text-colorPrimary hover:bg-white"
+                                    href="#">about
+                                    us</a></li>
+                            <li><a class="font-normal text-lg text-white capitalize hover:text-colorPrimary hover:bg-white"
+                                    href="#">shop</a>
+                            </li>
+                            <li><a class="font-normal text-lg text-white capitalize hover:text-colorPrimary hover:bg-white"
+                                    href="#">all
+                                    fruits</a></li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="">
+                    <div class="flex items-center">
+                        <img src="images/logo.png" alt="">
+                        <h3 class="text-colorHead lg:text-white text-2xl lg:text-4xl font-bold capitalize ml-3">fruits
+                            burst
+                        </h3>
+                    </div>
+                </div>
+                <div class="relative hidden rounded-xl lg:block">
+                    <input class="w-96 py-4 px-7 outline-none rounded-full " type="text" placeholder="Search here">
+                    <i class="fa-solid fa-magnifying-glass absolute top-1/2 -translate-y-1/2 right-6"
+                        style="color: #121212;"></i>
+                </div>
+                <div class="dropdown lg:hidden">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class=" menu menu-sm dropdown-content mt-3 mr-10 z-[1] p-2 shadow bg-slate-500  w-52 rounded-lg">
+                        <li><a class="font-normal text-lg text-white capitalize hover:opacity-80 transition"
                                 href="#">home</a>
                         </li>
-                        <li><a class="font-normal text-lg text-white capitalize hover:text-colorPrimary hover:bg-white"
+                        <li><a class="font-normal text-lg text-white capitalize hover:opacity-80 transition"
                                 href="#">about
                                 us</a></li>
-                        <li><a class="font-normal text-lg text-white capitalize hover:text-colorPrimary hover:bg-white"
+                        <li><a class="font-normal text-lg text-white capitalize hover:opacity-80 transition"
                                 href="#">shop</a>
                         </li>
-                        <li><a class="font-normal text-lg text-white capitalize hover:text-colorPrimary hover:bg-white"
+                        <li><a class="font-normal text-lg text-white capitalize hover:opacity-80 transition"
                                 href="#">all
                                 fruits</a></li>
                     </ul>
-                </ul>
-            </div>
-            <div class="">
-                <div class="flex items-center">
-                    <img src="images/logo.png" alt="">
-                    <h3 class="text-colorHead lg:text-white text-2xl lg:text-4xl font-bold capitalize ml-3">fruits burst
-                    </h3>
                 </div>
             </div>
-            <div class="relative hidden rounded-xl lg:block">
-                <input class="w-96 py-4 px-7 outline-none rounded-full " type="text" placeholder="Search here">
-                <i class="fa-solid fa-magnifying-glass absolute top-1/2 -translate-y-1/2 right-6"
-                    style="color: #121212;"></i>
-            </div>
-            <div class="dropdown lg:hidden">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h8m-8 6h16" />
-                    </svg>
-                </label>
-                <ul tabindex="0"
-                    class=" menu menu-sm dropdown-content mt-3 mr-10 z-[1] p-2 shadow bg-slate-500  w-52 rounded-lg">
-                    <li><a class="font-normal text-lg text-white capitalize hover:opacity-80 transition"
-                            href="#">home</a>
-                    </li>
-                    <li><a class="font-normal text-lg text-white capitalize hover:opacity-80 transition" href="#">about
-                            us</a></li>
-                    <li><a class="font-normal text-lg text-white capitalize hover:opacity-80 transition"
-                            href="#">shop</a>
-                    </li>
-                    <li><a class="font-normal text-lg text-white capitalize hover:opacity-80 transition" href="#">all
-                            fruits</a></li>
-                </ul>
-            </div>
-        </div>
+    </section>
+    <section class="Banner">
         <!-- bannar -->
         <div class="container carousel  rounded-lg">
             <div id="slide1" class="carousel-item relative w-full pt-5 lg:pt-20 pb-5 lg:pb-52"
@@ -150,7 +156,9 @@
                 </div>
             </div>
         </div>
-    </header>
+
+        </header>
+    </section>
     <section class="features">
         <div
             class="hidden lg:grid grid-cols-2 gap-5 lg:gap-0 lg:grid-cols-5 max-w-6xl mx-auto shadow-lg relative bottom-0 lg:bottom-24 bg-red-100  p-10 rounded-2xl">
@@ -596,34 +604,128 @@
                     </div>
                     <div class="flex flex-col justify-center items-center">
                         <div class="mb-8  mx-auto">
-                        <img src="./images/member4.png" alt="">
+                            <img src="./images/member4.png" alt="">
+                        </div>
+                        <h3 class="text-white text-2xl font-bold text-center">Chaity</h3>
+                        <p class="text-white font-medium text-center mb-4 mt-2">Fruits Expert</p>
+                        <ul class="flex gap-4 justify-center">
+                            <li class="flex justify-center items-center h-8 w-8 bg-colorPrimary rounded-full">
+                                <a href="#">
+                                    <i
+                                        class="fa-brands fa-facebook-f text-white rounded-full px-3 py-1 mx-3  bg-[#3533b9] text-lg "></i>
+                                </a>
+                            </li>
+                            <li class="flex justify-center items-center h-8 w-8 bg-colorPrimary rounded-full">
+                                <a href="#">
+                                    <i
+                                        class="fa-brands fa-twitter text-white rounded-full px-3 py-1  bg-[#F85559] text-lg "></i>
+                                </a>
+                            </li>
+                            <li class="flex justify-center items-center h-8 w-8 bg-colorPrimary rounded-full">
+                                <a href="#">
+                                    <i
+                                        class="fa-brands fa-linkedin-in rounded-full px-3 py-1  bg-[rounded-full px-3 py-1 mx-3  bg-[#c1c5d6] text-black text-lg "></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <h3 class="text-white text-2xl font-bold text-center">Chaity</h3>
-                    <p class="text-white font-medium text-center mb-4 mt-2">Fruits Expert</p>
-                    <ul class="flex gap-4 justify-center">
-                        <li class="flex justify-center items-center h-8 w-8 bg-colorPrimary rounded-full">
-                            <a href="#">
-                             <i   class="fa-brands fa-facebook-f text-white rounded-full px-3 py-1 mx-3  bg-[#3533b9] text-lg "></i>
-                            </a>
-                        </li>
-                        <li class="flex justify-center items-center h-8 w-8 bg-colorPrimary rounded-full">
-                            <a href="#">
-                              <i  class="fa-brands fa-twitter text-white rounded-full px-3 py-1  bg-[#F85559] text-lg "></i>
-                            </a>
-                        </li>
-                        <li class="flex justify-center items-center h-8 w-8 bg-colorPrimary rounded-full">
-                            <a href="#">
-                               <i class="fa-brands fa-linkedin-in rounded-full px-3 py-1  bg-[rounded-full px-3 py-1 mx-3  bg-[#c1c5d6] text-black text-lg "></i>
-                            </a>
-                        </li>
-                    </ul>
+
                 </div>
 
-        </div>
 
+            </section>
+    </section>
+    <section class="why choose us section ">
+        <section class="container mx-auto my-10 lg:my-32">
+            <div class="flex justify-center flex-col items-center">
+                <h2 class="text-center text-colorHead text-xl lg:text-5xl font-extrabold mb-6">Why Choose Us
+                </h2>
+                <p class="px-5 lg:px-0 text-center  font-medium text-colorPara leading-6 max-w-xl">Contrary to popular
+                    belief, is not simply
+                    random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000
+                    years old.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-12">
+                <div class="space-y-10">
+                    <div class="flex flex-col lg:flex-row gap-4 justify-center items-center lg:items-start">
+                        <div class="h-14 w-14 bg-gray-300 rounded-full flex items-center justify-center">
+                            <img src="images/icons/group.svg" alt="">
+                        </div>
+                        <div class="max-w-xs relative">
+                            <h3
+                                class="text-center lg:text-left text-colorHead text-2xl font-extrabold pb-5 after:absolute after:content[''] after:w-24 after:h-[1px] after:bg-black after:top-12 after:left-1/2 lg:after:left-0 after:-translate-x-1/2 lg:after:-translate-x-0">
+                                Dedicated Team</h3>
+                            <p class="text-center lg:text-left font-medium text-colorPara leading-6 mt-4">Professional
+                                employees are there for you to pick
+                                the most amazing and fresh fruits.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row gap-4 justify-center items-center lg:items-start">
+                        <div class="h-14 w-14 bg-gray-300 rounded-full flex items-center justify-center">
+                            <img src="images/icons/love.svg" alt="">
+                        </div>
+                        <div class="max-w-xs relative">
+                            <h3
+                                class="text-center lg:text-left text-colorHead text-2xl font-extrabold pb-5 after:absolute after:content[''] after:w-24 after:h-[1px] after:bg-black after:top-12 after:left-1/2 lg:after:left-0 after:-translate-x-1/2 lg:after:-translate-x-0">
+                                Fresh is Best</h3>
+                            <p class="text-center lg:text-left font-medium text-colorPara leading-6 mt-4">Professional
+                                employees are there for you to pick
+                                the most amazing and fresh fruits.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row gap-4 justify-center items-center lg:items-start">
+                        <div class="h-14 w-14 bg-gray-300 rounded-full flex items-center justify-center">
+                            <img src="images/icons/gift.svg" alt="">
+                        </div>
+                        <div class="max-w-xs relative">
+                            <h3
+                                class="text-center lg:text-left text-colorHead text-2xl font-extrabold pb-5 after:absolute after:content[''] after:w-24 after:h-[1px] after:bg-black after:top-12 after:left-1/2 lg:after:left-0 after:-translate-x-1/2 lg:after:-translate-x-0">
+                                Gift Certificates</h3>
+                            <p class="text-center lg:text-left font-medium text-colorPara leading-6 mt-4">Professional
+                                employees are there for you to pick
+                                the most amazing and fresh fruits.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-auto px-2 lg:px-0">
+                    <img class="h-full" src="images/whychoose1.png" alt="why choose image">
 
+                </div>
+                <div class="space-y-10">
+                    <div class="flex flex-col-reverse lg:flex-row gap-4">                    
+                        <div class="mx-auto lg:mx-0 max-w-xs relative">
+                            <h3 class="text-center lg:text-right text-colorHead text-2xl font-extrabold pb-5 after:absolute after:content[''] after:w-24 after:h-[1px] after:bg-black after:top-12  after:right-1/2 after:translate-x-1/2 lg:after:translate-x-0 lg:after:right-0">Integrated Supplier</h3>
+                            <p class="text-center lg:text-right font-medium text-colorPara leading-6 mt-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
+                        <div class="mx-auto h-14 w-14 bg-gray-300 rounded-full flex items-center justify-center">
+                            <img src="images/icons/fruit.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="flex flex-col-reverse lg:flex-row gap-4">                    
+                        <div class="mx-auto lg:mx-0 max-w-xs relative">
+                            <h3 class="text-center lg:text-right text-colorHead text-2xl font-extrabold pb-5 after:absolute after:content[''] after:w-24 after:h-[1px] after:bg-black after:top-12  after:right-1/2 after:translate-x-1/2 lg:after:translate-x-0 lg:after:right-0">Sustainable Practice</h3>
+                            <p class="text-center lg:text-right font-medium text-colorPara leading-6 mt-4">Professional employees are there for you to pick
+                                the most amazing and fresh fruits.</p>
+                        </div>
+                        <div class="mx-auto h-14 w-14 bg-gray-300 rounded-full flex items-center justify-center">
+                            <img src="images/icons/ice-cream.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="flex flex-col-reverse lg:flex-row gap-4">                    
+                        <div class="mx-auto max-w-xs relative">
+                            <h3 class="text-center lg:text-right text-colorHead text-2xl font-extrabold pb-5 after:absolute after:content[''] after:w-24 after:h-[1px] after:bg-black after:top-12  after:right-1/2 after:translate-x-1/2 lg:after:translate-x-0 lg:after:right-0">The Benefits Only</h3>
+                            <p class="text-center lg:text-right font-medium text-colorPara leading-6 mt-4">Professional employees are there for you to pick
+                                the most amazing and fresh fruits.</p>
+                        </div>
+                        <div class="mx-auto h-14 w-14 bg-gray-300 rounded-full flex items-center justify-center">
+                            <img src="images/icons/like.svg"alt="">
+                        </div>
+                    </div>
+                </div>
+            </div> </section>
 
     </section>
+
 
 
 
